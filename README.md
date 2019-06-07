@@ -7,7 +7,7 @@
 - [Rebex FTP](https://www.rebex.net/ftp-ssl.net/) 
 - [Windows Metro Framwork](https://github.com/dennismagno/metroframework-modern-ui) 
 
-### For use with the [PS4 Store Custom FTP ONLY](https://github.com/LightningMods/PS4-Store) 
+### For use with the [PS4 Store Custom](https://github.com/LightningMods/PS4-Store) FTP ONLY
 
 ## Credits
 - Xerpi
