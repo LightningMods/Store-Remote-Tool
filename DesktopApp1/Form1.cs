@@ -67,6 +67,19 @@ namespace DesktopApp1
 
         }
 
+
+        public static System.Drawing.Bitmap BytesToBitmap(byte[] ImgBytes)
+        {
+            System.Drawing.Bitmap result = null;
+            if (ImgBytes != null)
+            {
+                MemoryStream stream = new MemoryStream(ImgBytes);
+                result = (System.Drawing.Bitmap)System.Drawing.Bitmap.FromStream(stream);
+            }
+            return result;
+        }
+
+
         private void metroButton2_Click(object sender, EventArgs e)
         {
 
@@ -80,7 +93,13 @@ namespace DesktopApp1
             {
                 string FilePath = opendialog.FileName;
                 metroTextBox2.Text = FilePath;
- 
+
+                //Adding PS4 Tools so we can get an image pkg information ext
+                //xDPx
+
+                var pkgfile = PS4_Tools.PKG.SceneRelated.Read_PKG(FilePath);
+                pbPkg.Image = BytesToBitmap(pkgfile.Image);
+                lblPackageInfo.Text = pkgfile.PS4_Title + "\n" + pkgfile.PKG_Type.ToString() + "\n" + pkgfile.Param.TitleID;//display whatever info youd like here
             }
 
         }
