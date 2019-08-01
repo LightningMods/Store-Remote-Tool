@@ -27,6 +27,7 @@ namespace DesktopApp1
         {
             InitializeComponent();
             metroTextBox1.Text = Properties.Settings.Default.IP;
+            Rebex.Licensing.Key = "==AnKxIZnJ2NXyRRk/MrXLh5vsLbImP/JhMGERReY23qIk==";
 
         }
 
@@ -94,13 +95,19 @@ namespace DesktopApp1
                 string FilePath = opendialog.FileName;
                 metroTextBox2.Text = FilePath;
 
-                //Adding PS4 Tools so we can get an image pkg information ext
+           //Adding PS4 Tools so we can get an image pkg information ext
                 //xDPx
-
-                var pkgfile = PS4_Tools.PKG.SceneRelated.Read_PKG(FilePath);
-                pbPkg.Image = BytesToBitmap(pkgfile.Image);
-                lblPackageInfo.Text = pkgfile.PS4_Title + "\n" + pkgfile.PKG_Type.ToString() + "\n" + pkgfile.Param.TitleID;//display whatever info youd like here
-            }
+                try
+                {
+                    var pkgfile = PS4_Tools.PKG.SceneRelated.Read_PKG(FilePath);
+                    pbPkg.Image = BytesToBitmap(pkgfile.Image);
+                    lblPackageInfo.Text = pkgfile.PS4_Title + "\n" + pkgfile.PKG_Type.ToString() + "\n" +
+                                          pkgfile.Param.TitleID; //display whatever info youd like here
+                }
+                catch (Exception ee)
+                {
+                    MessageBox.Show("Invaild Package!");
+                }
 
         }
 
