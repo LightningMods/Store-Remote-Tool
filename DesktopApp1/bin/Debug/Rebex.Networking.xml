@@ -6154,37 +6154,6 @@
             </summary>
       <remarks>This cipher is considered weak.</remarks>
     </member>
-    <member name="F:Rebex.Net.TlsCipherSuite.Fast">
-      <summary>
-            Specifies all ciphers that are currently considered secure and that are reasonably fast on legacy hardware.
-            </summary>
-      <remarks>
-        <code>ECDHE_ECDSA_WITH_AES_128_CBC_SHA256</code>
-        <br />
-        <code>ECDHE_ECDSA_WITH_AES_256_CBC_SHA384</code>
-        <br />
-        <code>ECDHE_RSA_WITH_AES_128_CBC_SHA256</code>
-        <br />
-        <code>ECDHE_RSA_WITH_AES_256_CBC_SHA384</code>
-        <br />
-        <code>RSA_WITH_AES_128_CBC_SHA256</code>
-        <br />
-        <code>RSA_WITH_AES_256_CBC_SHA256</code>
-        <br />
-        <code>RSA_WITH_AES_128_GCM_SHA256</code>
-        <br />
-        <code>RSA_WITH_AES_256_GCM_SHA384</code>
-        <br />
-        <code>ECDHE_ECDSA_WITH_AES_128_GCM_SHA256</code>
-        <br />
-        <code>ECDHE_ECDSA_WITH_AES_256_GCM_SHA384</code>
-        <br />
-        <code>ECDHE_RSA_WITH_AES_128_GCM_SHA256</code>
-        <br />
-        <code>ECDHE_RSA_WITH_AES_256_GCM_SHA384</code>
-        <br />
-      </remarks>
-    </member>
     <member name="F:Rebex.Net.TlsCipherSuite.Secure">
       <summary>
             Specifies all ciphers that are currently considered secure.

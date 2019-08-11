@@ -45,6 +45,7 @@ namespace DesktopApp1
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.lblPackageInfo = new System.Windows.Forms.Label();
             this.pbPkg = new System.Windows.Forms.PictureBox();
+            this.metroButton3 = new MetroFramework.Controls.MetroButton();
             ((System.ComponentModel.ISupportInitialize)(this.pbPkg)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,9 +53,10 @@ namespace DesktopApp1
             // 
             this.helloWorldLabel.AutoSize = true;
             this.helloWorldLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.helloWorldLabel.Location = new System.Drawing.Point(212, 30);
+            this.helloWorldLabel.Location = new System.Drawing.Point(159, 24);
+            this.helloWorldLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.helloWorldLabel.Name = "helloWorldLabel";
-            this.helloWorldLabel.Size = new System.Drawing.Size(281, 31);
+            this.helloWorldLabel.Size = new System.Drawing.Size(227, 26);
             this.helloWorldLabel.TabIndex = 3;
             this.helloWorldLabel.Text = "PS4 Package Installer";
             this.helloWorldLabel.Click += new System.EventHandler(this.helloWorldLabel_Click);
@@ -74,20 +76,18 @@ namespace DesktopApp1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(116, 101);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(87, 82);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 19);
+            this.label1.Size = new System.Drawing.Size(71, 16);
             this.label1.TabIndex = 5;
             this.label1.Text = "IP Address";
             this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // metroButton2
             // 
-            this.metroButton2.Location = new System.Drawing.Point(87, 158);
-            this.metroButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.metroButton2.Location = new System.Drawing.Point(65, 128);
             this.metroButton2.Name = "metroButton2";
-            this.metroButton2.Size = new System.Drawing.Size(124, 28);
+            this.metroButton2.Size = new System.Drawing.Size(93, 23);
             this.metroButton2.TabIndex = 7;
             this.metroButton2.Text = "Open Package";
             this.metroButton2.UseSelectable = true;
@@ -99,10 +99,9 @@ namespace DesktopApp1
             // 
             // 
             this.metroTextBox1.CustomButton.Image = null;
-            this.metroTextBox1.CustomButton.Location = new System.Drawing.Point(255, 2);
-            this.metroTextBox1.CustomButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.metroTextBox1.CustomButton.Location = new System.Drawing.Point(106, 1);
             this.metroTextBox1.CustomButton.Name = "";
-            this.metroTextBox1.CustomButton.Size = new System.Drawing.Size(31, 28);
+            this.metroTextBox1.CustomButton.Size = new System.Drawing.Size(16, 17);
             this.metroTextBox1.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroTextBox1.CustomButton.TabIndex = 1;
             this.metroTextBox1.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -110,8 +109,7 @@ namespace DesktopApp1
             this.metroTextBox1.CustomButton.Visible = false;
             this.metroTextBox1.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.metroTextBox1.Lines = new string[0];
-            this.metroTextBox1.Location = new System.Drawing.Point(219, 101);
-            this.metroTextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.metroTextBox1.Location = new System.Drawing.Point(164, 82);
             this.metroTextBox1.MaxLength = 32767;
             this.metroTextBox1.Name = "metroTextBox1";
             this.metroTextBox1.PasswordChar = '\0';
@@ -121,7 +119,7 @@ namespace DesktopApp1
             this.metroTextBox1.SelectionLength = 0;
             this.metroTextBox1.SelectionStart = 0;
             this.metroTextBox1.ShortcutsEnabled = true;
-            this.metroTextBox1.Size = new System.Drawing.Size(217, 28);
+            this.metroTextBox1.Size = new System.Drawing.Size(163, 23);
             this.metroTextBox1.TabIndex = 8;
             this.metroTextBox1.UseSelectable = true;
             this.metroTextBox1.WaterMark = "192.168.1.3";
@@ -134,18 +132,16 @@ namespace DesktopApp1
             // 
             // 
             this.metroTextBox2.CustomButton.Image = null;
-            this.metroTextBox2.CustomButton.Location = new System.Drawing.Point(255, 2);
-            this.metroTextBox2.CustomButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.metroTextBox2.CustomButton.Location = new System.Drawing.Point(106, 1);
             this.metroTextBox2.CustomButton.Name = "";
-            this.metroTextBox2.CustomButton.Size = new System.Drawing.Size(31, 28);
+            this.metroTextBox2.CustomButton.Size = new System.Drawing.Size(16, 17);
             this.metroTextBox2.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroTextBox2.CustomButton.TabIndex = 1;
             this.metroTextBox2.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroTextBox2.CustomButton.UseSelectable = true;
             this.metroTextBox2.CustomButton.Visible = false;
             this.metroTextBox2.Lines = new string[0];
-            this.metroTextBox2.Location = new System.Drawing.Point(219, 156);
-            this.metroTextBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.metroTextBox2.Location = new System.Drawing.Point(164, 127);
             this.metroTextBox2.MaxLength = 32767;
             this.metroTextBox2.Name = "metroTextBox2";
             this.metroTextBox2.PasswordChar = '\0';
@@ -154,7 +150,7 @@ namespace DesktopApp1
             this.metroTextBox2.SelectionLength = 0;
             this.metroTextBox2.SelectionStart = 0;
             this.metroTextBox2.ShortcutsEnabled = true;
-            this.metroTextBox2.Size = new System.Drawing.Size(217, 28);
+            this.metroTextBox2.Size = new System.Drawing.Size(163, 23);
             this.metroTextBox2.TabIndex = 9;
             this.metroTextBox2.UseSelectable = true;
             this.metroTextBox2.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -163,20 +159,18 @@ namespace DesktopApp1
             // button1
             // 
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(444, 101);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Location = new System.Drawing.Point(333, 82);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(44, 39);
+            this.button1.Size = new System.Drawing.Size(33, 32);
             this.button1.TabIndex = 10;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // metroButton1
             // 
-            this.metroButton1.Location = new System.Drawing.Point(197, 340);
-            this.metroButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.metroButton1.Location = new System.Drawing.Point(148, 276);
             this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(197, 49);
+            this.metroButton1.Size = new System.Drawing.Size(148, 40);
             this.metroButton1.TabIndex = 11;
             this.metroButton1.Text = "Install Package";
             this.metroButton1.UseSelectable = true;
@@ -187,63 +181,72 @@ namespace DesktopApp1
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label2.Location = new System.Drawing.Point(5, 393);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(4, 319);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(200, 17);
+            this.label2.Size = new System.Drawing.Size(153, 13);
             this.label2.TabIndex = 12;
             this.label2.Text = "Copyright DarkSoftware LLC ©";
             // 
             // lblProgress
             // 
             this.lblProgress.AutoSize = true;
-            this.lblProgress.Location = new System.Drawing.Point(193, 266);
-            this.lblProgress.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblProgress.Location = new System.Drawing.Point(145, 216);
             this.lblProgress.Name = "lblProgress";
-            this.lblProgress.Size = new System.Drawing.Size(60, 17);
+            this.lblProgress.Size = new System.Drawing.Size(47, 13);
             this.lblProgress.TabIndex = 14;
             this.lblProgress.Text = "Connect";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(193, 315);
-            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label15.Location = new System.Drawing.Point(145, 256);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(38, 17);
+            this.label15.Size = new System.Drawing.Size(29, 13);
             this.label15.TabIndex = 15;
             this.label15.Text = "Prog";
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(197, 286);
-            this.progressBar1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.progressBar1.Location = new System.Drawing.Point(148, 232);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(239, 26);
+            this.progressBar1.Size = new System.Drawing.Size(179, 21);
             this.progressBar1.TabIndex = 16;
             // 
             // lblPackageInfo
             // 
             this.lblPackageInfo.AutoSize = true;
-            this.lblPackageInfo.Location = new System.Drawing.Point(227, 193);
+            this.lblPackageInfo.Location = new System.Drawing.Point(170, 157);
+            this.lblPackageInfo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPackageInfo.Name = "lblPackageInfo";
-            this.lblPackageInfo.Size = new System.Drawing.Size(0, 17);
+            this.lblPackageInfo.Size = new System.Drawing.Size(0, 13);
             this.lblPackageInfo.TabIndex = 17;
             // 
             // pbPkg
             // 
-            this.pbPkg.Location = new System.Drawing.Point(87, 193);
+            this.pbPkg.Location = new System.Drawing.Point(65, 157);
+            this.pbPkg.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbPkg.Name = "pbPkg";
-            this.pbPkg.Size = new System.Drawing.Size(118, 70);
+            this.pbPkg.Size = new System.Drawing.Size(88, 57);
             this.pbPkg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbPkg.TabIndex = 18;
             this.pbPkg.TabStop = false;
             // 
+            // metroButton3
+            // 
+            this.metroButton3.Location = new System.Drawing.Point(405, 311);
+            this.metroButton3.Name = "metroButton3";
+            this.metroButton3.Size = new System.Drawing.Size(94, 31);
+            this.metroButton3.TabIndex = 19;
+            this.metroButton3.Text = "Install Payload";
+            this.metroButton3.UseSelectable = true;
+            this.metroButton3.Click += new System.EventHandler(this.metroButton3_Click);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(711, 435);
+            this.ClientSize = new System.Drawing.Size(533, 353);
+            this.Controls.Add(this.metroButton3);
             this.Controls.Add(this.pbPkg);
             this.Controls.Add(this.lblPackageInfo);
             this.Controls.Add(this.progressBar1);
@@ -257,9 +260,8 @@ namespace DesktopApp1
             this.Controls.Add(this.metroButton2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.helloWorldLabel);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
-            this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbPkg)).EndInit();
             this.ResumeLayout(false);
@@ -283,6 +285,7 @@ namespace DesktopApp1
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Label lblPackageInfo;
         private System.Windows.Forms.PictureBox pbPkg;
+        private MetroFramework.Controls.MetroButton metroButton3;
     }
 }
 

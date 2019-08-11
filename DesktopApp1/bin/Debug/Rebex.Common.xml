@@ -3483,11 +3483,6 @@
             SHA-1.
             </summary>
     </member>
-    <member name="F:Rebex.Security.Cryptography.HashingAlgorithmId.SHA224">
-      <summary>
-            SHA-224.
-            </summary>
-    </member>
     <member name="F:Rebex.Security.Cryptography.HashingAlgorithmId.SHA256">
       <summary>
             SHA-256.
@@ -6846,11 +6841,6 @@
             MD4.
             </summary>
     </member>
-    <member name="F:Rebex.Security.Certificates.SignatureHashAlgorithm.SHA224">
-      <summary>
-            SHA-224.
-            </summary>
-    </member>
     <member name="T:Rebex.Security.Certificates.KeyAlgorithm">
       <summary>
             The key algorithm for the certificate.
@@ -7147,13 +7137,6 @@
       <param name="password">Private key password.</param>
       <param name="format">Private key file format.</param>
       <param name="silent">If set to true, the cryptographic provider should not display any user interface (UI) when exporting private key parameters.</param>
-    </member>
-    <member name="M:Rebex.Security.Certificates.Certificate.GetPrivateKeyInfo(System.Boolean)">
-      <summary>
-            Returns the private key info for the X.509v3 certificate.
-            </summary>
-      <param name="silent">If set to true, the cryptographic provider should not display any user interface (UI) when exporting private key parameters.</param>
-      <returns>The private key info for the X.509v3 certificate.</returns>
     </member>
     <member name="M:Rebex.Security.Certificates.Certificate.#ctor(System.IntPtr)">
       <summary>
@@ -7809,15 +7792,6 @@
       <param name="extraStore">An extra store to search for intermediate and root CA certificates.</param>
       <returns>The built certificate chain.</returns>
     </member>
-    <member name="M:Rebex.Security.Certificates.CertificateEngine.Bind(Rebex.Security.Certificates.Certificate,Rebex.Security.Cryptography.Pkcs.PrivateKeyInfo,Rebex.Security.Certificates.CertificateKeyParameters)">
-      <summary>
-            Saves the supplied private key to certificate engine's private key storage and
-            permanently binds it to the supplied certificate.
-            </summary>
-      <param name="certificate">A certificate to bind the private key to.</param>
-      <param name="privateKey">A private key to bind.</param>
-      <param name="parameters">Parameters for private key storage.</param>
-    </member>
     <member name="M:Rebex.Security.Certificates.CertificateEngine.GetCurrentEngine">
       <summary>
             Gets the current certificate engine.
@@ -7835,11 +7809,6 @@
             Gets the default certificate engine which is used if no custom engine is set as current engine.
             </summary>
     </member>
-    <member name="P:Rebex.Security.Certificates.CertificateEngine.LocalMachine">
-      <summary>
-            Gets the certificate engine based on LocalMachine store.
-            </summary>
-    </member>
     <member name="T:Rebex.Security.Certificates.CertificateValidationParameters">
       <summary>
             Certificate validation parameters for <see cref="T:Rebex.Security.Certificates.CertificateEngine" />'s <see cref="M:Rebex.Security.Certificates.CertificateEngine.Validate(Rebex.Security.Certificates.CertificateChain,Rebex.Security.Certificates.CertificateValidationParameters)" /> method.
@@ -7853,16 +7822,6 @@
     <member name="M:Rebex.Security.Certificates.CertificateValidationParameters.#ctor">
       <summary>
             Creates a new instance of <see cref="T:Rebex.Security.Certificates.CertificateValidationParameters" />.
-            </summary>
-    </member>
-    <member name="T:Rebex.Security.Certificates.CertificateKeyParameters">
-      <summary>
-            Certificate private key parameters for <see cref="T:Rebex.Security.Certificates.CertificateEngine" />'s <see cref="M:Rebex.Security.Certificates.CertificateEngine.Bind(Rebex.Security.Certificates.Certificate,Rebex.Security.Cryptography.Pkcs.PrivateKeyInfo,Rebex.Security.Certificates.CertificateKeyParameters)" /> method.
-            </summary>
-    </member>
-    <member name="M:Rebex.Security.Certificates.CertificateKeyParameters.#ctor">
-      <summary>
-            Creates a new instance of <see cref="T:Rebex.Security.Certificates.CertificateKeyParameters" />.
             </summary>
     </member>
     <member name="T:Rebex.Security.Certificates.CertificateException">

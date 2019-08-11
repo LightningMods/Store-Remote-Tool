@@ -95,7 +95,7 @@ namespace DesktopApp1
                 string FilePath = opendialog.FileName;
                 metroTextBox2.Text = FilePath;
 
-           //Adding PS4 Tools so we can get an image pkg information ext
+                //Adding PS4 Tools so we can get an image pkg information ext
                 //xDPx
                 try
                 {
@@ -109,6 +109,7 @@ namespace DesktopApp1
                     MessageBox.Show("Invaild Package!");
                 }
 
+            }
         }
 
 
@@ -312,7 +313,7 @@ namespace DesktopApp1
             // MessageBox.Show("Problem Detected " + e);
         }
 
-        private void god(string path, string dir)
+        private void god(string path, string dir, string filepath)
         {
             using (Ftp client = new Ftp())
             {
@@ -329,23 +330,30 @@ namespace DesktopApp1
                     client.DeleteProgressChanged += DeleteProgressChanged;
                     client.ProblemDetected += ProblemDetected;
 
-                   client.PutFile(dir, @"/user/app/temp.pkg");
-
-                    client.SendCommand("installpkg");
-
-                    var response = client.ReadResponse();
-
-                    MessageBox.Show(response.Raw);
-
-                    SetText("Package Sent");
-
-
-
+                   client.PutFile(dir, filepath);
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
                 }
+
+                if (filepath == @"/user/app/PayloadPlugin.prx")
+                   {
+                       SetText("Plugin Installed");
+                    }
+                   else
+                   {
+
+
+
+                       client.SendCommand("installpkg");
+
+                       SetText("Package Sent");
+                   }
+
+
+
+      
 
                 client.Disconnect();
             }
@@ -360,9 +368,28 @@ namespace DesktopApp1
         private void metroButton1_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Started");
-            Task.Run(() => god(metroTextBox1.Text, metroTextBox2.Text));
+            Task.Run(() => god(metroTextBox1.Text, metroTextBox2.Text, @"/user/app/temp.pkg"));
         }
 
+        private void metroButton3_Click(object sender, EventArgs e)
+        {
+            try
+            {
 
+                string docpath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) +
+                                 @"\PayloadPlugin.prx";
+                using (var client = new WebClient())
+                {
+                    client.DownloadFile("https://psarchive.darksoftware.xyz/PayloadPlugin.prx", docpath);
+                }
+
+                Task.Run(() => god(metroTextBox1.Text, docpath, @"/user/app/PayloadPlugin.prx"));
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
     }
 }
