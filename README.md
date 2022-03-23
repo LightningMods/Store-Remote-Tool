@@ -1,4 +1,5 @@
 # Store-Remote-Tool
+## IMPORTENT This tool no longer works with the latest Store and is ARCHIVED now
 
 ![tool](https://github.com/LightningMods/Store-Remote-Tool/blob/master/unknown%20(1).png)
 
